@@ -1,0 +1,11 @@
+[package]
+name = "rust-sms"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+tokio = { version = "1.22.0", features = ["full", "rt", "rt-multi-thread", "macros"] }
+openapi = { version = "1.38.1", path = "../twilio-rust" }
